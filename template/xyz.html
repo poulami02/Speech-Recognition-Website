@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	
+	<title></title>
+	<link href="https://fonts.googleapis.com/css2?family=Arima:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{url_for('static', filename='Styles/xyz.css')}}"/>
+</head>
+<body>
+	<h1>Welcome to the Speech Recognition website!</h1><br><br>
+	
+	<div id="speechContainer">
+		<h2>Upload your video</h2><br>
+		<form method="post" enctype="multipart/form-data">
+			<input type="file" class ='choice1' accept="video/*" name="file"/><br><br><br>
+			<input type="submit" class ='choice2' value="Download audio"/><br><br>
+			
+			
+		</form>
+
+		</div>
+
+		<div id="speechtranscript">
+
+		<h2>Facing issues understanding the audio?...Here is the text --></h2><br>
+			<table style="width:65%">
+				<tr>
+				<th><h3>Choose Language :</h3></th>
+				<th><h4><a href="{{url_for('english')}}">English</a></h4></th>
+				<th><h4><a href="{{url_for('bengali')}}">Bengali</a></h4></th>
+				<th><h4><a href="{{url_for('hindi')}}">Hindi</a></h4></th>
+				<th><h4><a href="{{url_for('spanish')}}">Spanish</a></h4></th>
+				</tr>
+			</table>
+		
+		<br><br>
+
+
+		</div>
+		{% block content %}
+		{% endblock %}
+		
+	
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>English Text</title>
+	<link href="https://fonts.googleapis.com/css2?family=Arima:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{url_for('static', filename='Styles/xyz.css')}}"/>
+</head>
+<body>
+	{% extends "xyz.html" %}
+	{% block content %}
+	{% if transcript!="" %}
+				<div class="Text">
+					<h1>Text in English</h1><br>
+					<p><b><em>{{transcript}}</em></b></p>
+				</div>
+			{% endif %}
+	{% endblock %}
+</body>
+</html>

@@ -1,0 +1,50 @@
+body{
+	background-color: yellow;
+}
+
+h1{
+	padding-left: 28%;
+	padding-top: 5%;
+}
+
+h2{
+	font-family: 'Shadows Into Light Two', cursive;
+}
+
+#speechContainer{
+	padding-left: 44%;
+	background-color: yellow;
+}
+
+.choice1{
+	padding-left: 2%;
+}
+
+.choice2{
+	margin-left: 1%;
+	color: white;
+	background-color: black;
+	padding: 3% 5% 3%;
+	border-radius: 7px;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.choice2:hover{
+	color: black;
+	background-color: white;
+}
+
+#speechtranscript{
+	padding-left: 24%;
+}
+
+p{
+	margin-left: 20%;
+	margin-right: 20%;
+	border: 3px solid black;
+	padding: 5% 7% 5%;
+	background: radial-gradient(tomato,white);
+	line-height: 1.6;
+	font-size: 20px;
+}
